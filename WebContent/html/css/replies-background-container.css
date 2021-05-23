@@ -1,0 +1,228 @@
+@charset "ISO-8859-1";
+
+html {
+  background: url("https://images.hdqwalls.com/download/3d-black-cube-4r-2560x1440.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.title {
+	background: url("https://wallpaperaccess.com/full/4531.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+	text-align: center;
+	font-size: 70px;
+	color: red;
+	text-shadow: 0 0 5px blue, 0 0 5px red;
+	font-family: Brush Script MT, Brush Script Std, cursive; 
+	background-color: red;
+	margin: -10px;
+	border-style: solid;
+	border-color: red;
+	overflow-x: hidden;
+}
+.section {
+	color: red;
+	text-shadow: 2px 2px blue;
+	font-size: 60px;
+	font-family: Brush Script MT; 
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+}
+.section-list {
+	color: white;
+	font-size: 40px;
+	font-family: Garamond; 
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+.section-com-panel {
+	color: white;
+	font-size: 30px;
+	font-family: Garamond; 
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+.nav {
+	list-style-type: none;
+	margin: -10px;
+	padding: 0px;
+	overflow: hidden;
+	border-style: solid;
+	border-color: red;
+	overflow-x: hidden;
+	background-color: black;
+	text-shadow: 2px 1px red;
+}
+.nav a {
+	float: left;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+.right-nav {
+	float: right;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	
+	text-decoration: none;
+}
+.nav-dropdown {
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+}
+.nav-button {
+	font-size: 20px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	text-shadow: 2px 1px red;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+}
+.right-nav-button:hover {
+	animation-name: button-hover-anim;
+	animation-duration: 1s;
+}
+.nav-button:hover {
+	animation-name: button-hover-anim;
+	animation-duration: 1s;
+}
+@keyframes button-hover-anim{
+	30% {background-color: red;}
+	20% {background-color: blue;}
+	20% {background-color: purple;}
+	20% {background-color: blue;}
+	30% {background-color: red;}
+}
+
+.nav a:hover, .nav-dropdown:hover {
+	background-color: #262626;
+	color: white;
+	text-shadow: 2px 1px blue;
+}
+.nav-dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 240px;	
+	border-top: solid red;
+	
+}
+.nav-dropdown-content a {
+	float: none;
+	color: white;
+	padding: 14px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.nav-dropdown a:hover {
+	background-color: #262626;
+}
+.nav-dropdown:hover .nav-dropdown-content {
+	display: block;
+}
+.usrpost {
+ 	color: red;	
+}
+.details {
+	color: white;
+	width: 200px;
+	text-align: center;
+}
+.time{
+	color: red;
+	width: 200px;
+	text-align: center;
+}
+
+h1 {
+	color: red;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+}
+h3 {
+	color: white;
+	font-family: Garamond;
+}
+table {
+	margin: 0 auto;
+	width: 70vw;
+	color: grey;
+	border: solid;
+	border-color: red;
+}
+a {
+	color: white;
+	font-size: 20px;
+}
+tr {
+	background-color: black;
+	table-layout: fixed;
+	border: solid;
+	border-color: white;
+	
+}
+th{
+	color: red;
+	font-size: 25px;
+}
+td{
+	color: white;
+	font-size: 20px;
+	border: solid;
+	border-color: #333333;
+
+}
+input {
+	width: 150px;
+}
+.edit {
+  background-color: #272121;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-shadow: 2px 1px red;
+  cursor: pointer;
+  float: left;
+  width: 90px;
+}
+.edit:hover {
+	background-color: green;
+	text-shadow: 2px 1px blue;
+}
+.delete {
+  background-color: #272121;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+  font-size: 16px;
+  text-shadow: 2px 1px red;
+  cursor: pointer;
+  float: right;
+}
+.delete:hover {
+	background-color: red;
+	text-shadow: 2px 1px blue;
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    id="WebApp_ID" version="3.1">
+    <display-name>MilkyWay</display-name>
+ 
+    <context-param>
+        <param-name>jdbcURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/#SQL_DATABASE#</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>jdbcUsername</param-name>
+        <param-value>#USERNAME#</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>jdbcPassword</param-name>
+        <param-value>#PASSWORD#</param-value>
+    </context-param>
+ 
+    <servlet>
+        <servlet-name>UsersServlet</servlet-name>
+        <servlet-class>users.UsersServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>NebulasServlet</servlet-name>
+        <servlet-class>nebulas.NebulasServlet</servlet-class>
+    </servlet>   
+    
+    <servlet>
+        <servlet-name>SubnebulasServlet</servlet-name>
+        <servlet-class>subnebulas.SubnebulasServlet</servlet-class>
+    </servlet>  
+    
+    <servlet>
+        <servlet-name>PostsServlet</servlet-name>
+        <servlet-class>posts.PostsServlet</servlet-class>
+    </servlet>  
+    
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>profiles.ProfileServlet</servlet-class>
+    </servlet> 
+ 
+    <servlet-mapping>
+        <servlet-name>UsersServlet</servlet-name>
+        <url-pattern>/UserForm</url-pattern>
+        <url-pattern>/create</url-pattern>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/logout</url-pattern>
+        <url-pattern>/VerifyCode</url-pattern>
+        <url-pattern>/RecoverAccount</url-pattern>
+        <url-pattern>/SendRecoverEmail</url-pattern>
+        <url-pattern>/SetNewPassword</url-pattern>
+        <url-pattern>/user/SupportPage</url-pattern>
+        <url-pattern>/user/AboutPage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>NebulasServlet</servlet-name>
+        <url-pattern>/user/ViewNebulas</url-pattern>
+        <url-pattern>/user/CreateNebula</url-pattern>
+        <url-pattern>/user/CreateNewNebula</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>SubnebulasServlet</servlet-name>
+        <url-pattern>/user/ViewSubnebulas</url-pattern>
+        <url-pattern>/user/RedirectSubnebulas</url-pattern>
+        <url-pattern>/user/createSubnebula</url-pattern>
+        <url-pattern>/user/CreateSubnebulaForm</url-pattern>
+        <url-pattern>/user/CreateUserPermission</url-pattern>
+        <url-pattern>/user/AddPermission</url-pattern>
+        <url-pattern>/user/EditSubnebula</url-pattern>
+        <url-pattern>/user/EditSubnebulaForm</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>PostsServlet</servlet-name>
+        <url-pattern>/user/ViewPosts</url-pattern>
+        <url-pattern>/user/RedirectPosts</url-pattern>
+        <url-pattern>/user/createReply</url-pattern>
+        <url-pattern>/user/CreatePost</url-pattern>
+        <url-pattern>/user/EditPostForm</url-pattern>
+        <url-pattern>/user/EditPost</url-pattern>
+        <url-pattern>/user/DeletePost</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/user/MyAccount</url-pattern>
+        <url-pattern>/user/EditProfileBio</url-pattern>
+        <url-pattern>/user/EditProfilePicture</url-pattern>
+        <url-pattern>/user/EditBio</url-pattern>
+        <url-pattern>/user/EditPicture</url-pattern>
+    </servlet-mapping>
+    
+ 	<session-config>
+ 		<cookie-config>
+ 		 	<http-only>true</http-only>
+ 			<secure>true</secure>
+ 		</cookie-config>
+ 	</session-config>
+    
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/Error.jsp</location>
+    </error-page>
+</web-app>

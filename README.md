@@ -22,6 +22,7 @@ SSL/HTTPS configuration:
 - Secure header configuration within nginx server
 
 General:
+
  Nebulake enables users to create an account with an email, username, and password. Once the user's email is authenticated, they are re-directed to the main page 
  which presents a navigation panel to the user to access their profile page, nebulas (categories), which is comprised of subnebulas (sub-categories) and the posts 
  made within subnebulas.

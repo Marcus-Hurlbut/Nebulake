@@ -1,27 +1,27 @@
-# nebulake
-Forum website project for educational purposes
+# Nebulake - https://nebulake.com
+![nebulake_screenshot](https://user-images.githubusercontent.com/72711596/139314702-ccd606fa-ff09-4bf3-8823-18d9c6e05619.png)
 
-https://nebulake.com
 
-I created this forum website, nebulake.com, for educational purposes as well as experimenting to create private and permission-based channels within forums.
 
-Languages Used:
+I created this forum website for educational purposes such as experimenting with permission-based channels within forums, SSL/HTTPS configurations, and user sessions / cookies.
+
+# Languages:
 - Java
 - JSP/CSS
 - SQL
 
-Technologies Used:
+# Technologies:
 - Tomcat web server 
 - Nginx proxy server (handles https requests)
 - Java Maven Build
 - SSL
 
-SSL/HTTPS configuration:
+# SSL/HTTPS configuration:
 - HTTPS requests are handled by nginx
 - CA SSL certificates
-- Secure header configuration within nginx server
+- Secure header configuration within nginx proxy
 
-General:
+# General:
 
  Nebulake enables users to create an account with an email, username, and password. Once the user's email is authenticated, they are re-directed to the main page 
  which presents a navigation panel to the user to access their profile page, nebulas (categories), which is comprised of subnebulas (sub-categories) and the posts 
